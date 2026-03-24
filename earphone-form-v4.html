@@ -94,7 +94,7 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
 .fnote{font-size:10px;color:var(--sub);margin-top:3px;line-height:1.6}
 .pconfirm{background:#fff8f0;border:1.5px solid #f5d8b8;border-radius:14px;padding:14px;margin-bottom:12px}
 .pct{font-size:12px;font-weight:700;color:#8a5020;margin-bottom:10px}
-.pcinner{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.pcinner{display:flex;gap:14px;align-items:center;justify-content:center;margin-bottom:14px;flex-direction:column;text-align:center}
 .pcimg{width:76px;height:76px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--border);background:linear-gradient(135deg,#f0ece8,#e0d8d0);overflow:hidden}
 .pcimg svg{width:60px;height:60px}
 .pcdetails{flex:1;display:flex;flex-direction:column;gap:5px}
@@ -244,8 +244,8 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
   .wrap{max-width:860px;background:transparent;border-radius:0;box-shadow:none}
 
   /* ヘッダー */
-  .hdr{max-width:860px;margin:0 auto;border-radius:12px 12px 0 0;padding:16px 32px 14px}
-  .hdr-logo svg{height:36px}
+  .hdr{max-width:860px;margin:0 auto;border-radius:12px 12px 0 0;padding:16px 32px 14px} .hdr-logo{flex-shrink:0}
+  .hdr-logo svg{height:36px;width:auto;max-width:260px}
   .hdr-title{font-size:15px}
 
   /* ステッパー */
@@ -287,7 +287,7 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
 
   /* STEP4：確認エリア */
   .pconfirm{padding:20px}
-  .pcimg{width:120px;height:120px}
+  .pcimg{width:120px;height:120px;margin:0 auto}
   .pcmodel{font-size:18px}
   .sumcard{border-radius:14px}
   .sumrow{padding:12px 18px;font-size:13px}
@@ -454,8 +454,8 @@ function autoAddr(){
     <div class="pmodel">ATH-TWX9 他</div>
     <div class="ptag tag-nc">フラッグシップ</div>
   </div>
-</div>
-<div class="pgrid">
+
+
   <div class="pcard" id="p-ck1tw">
     <div class="cbadge"><svg viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="2"/></svg></div>
     <img class="pthumb" src="data:image/jpeg;base64,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" alt="" style="width:68px;height:68px;object-fit:contain;">
@@ -512,18 +512,18 @@ function autoAddr(){
       <div class="fwrap"><div class="flabel">メイ <span class="req">必須</span></div><input class="finput" type="text" placeholder="ハナコ" id="f-fk" oninput="chk3()"></div>
     </div>
   </div>
-  <div class="fwrap">
+  <div class="fwrap" style="max-width:50%">
     <div class="flabel">電話番号 <span class="req">必須</span></div>
     <input class="finput" type="tel" placeholder="090-0000-0000" id="f-tel" oninput="chk3()">
     <div class="fnote">※ 配送に関するご連絡に使用する場合があります</div>
   </div>
   <div class="fwrap">
     <div class="flabel">郵便番号 <span class="req">必須</span></div>
-    <div class="prow"><div class="fwrap"><input class="finput" type="text" placeholder="000-0000" id="f-zip" maxlength="8" oninput="chk3()"></div><button class="abtn" onclick="autoAddr()">住所を自動入力</button></div>
+    <div class="prow" style="max-width:50%"><div class="fwrap"><input class="finput" type="text" placeholder="000-0000" id="f-zip" maxlength="8" oninput="chk3()"></div><button class="abtn" onclick="autoAddr()">住所を自動入力</button></div>
   </div>
-  <div class="fwrap"><div class="flabel">都道府県 <span class="req">必須</span></div><input class="finput" type="text" placeholder="東京都" id="f-pref" oninput="chk3()"></div>
-  <div class="fwrap"><div class="flabel">市区町村・番地 <span class="req">必須</span></div><input class="finput" type="text" placeholder="例）渋谷区1丁目1番地" id="f-a1" oninput="chk3()"></div>
-  <div class="fwrap"><div class="flabel">建物名・部屋番号</div><input class="finput" type="text" placeholder="○○マンション 101号室（任意）" id="f-a2"></div>
+  <div class="fwrap" style="max-width:50%"><div class="flabel">都道府県 <span class="req">必須</span></div><input class="finput" type="text" placeholder="東京都" id="f-pref" oninput="chk3()"></div>
+  <div class="fwrap"><div class="flabel">市区町村 <span class="req">必須</span></div><input class="finput" type="text" placeholder="例）渋谷区" id="f-a1" oninput="chk3()"></div>
+  <div class="fwrap"><div class="flabel">番地・ビル名・マンション名・部屋番号 <span class="req">必須</span></div><input class="finput" type="text" placeholder="例）1丁目1番地 ○○マンション101号" id="f-a2" oninput="chk3()"></div>
   <div class="fwrap">
     <div class="flabel">メールアドレス <span class="req">必須</span></div>
     <input class="finput" type="email" placeholder="example@email.com" id="f-email" oninput="chk3()">
@@ -961,7 +961,7 @@ function selColor(id,name){
   document.getElementById('s2next').disabled=false;
 }
 function chk3(){
-  const ok=['f-ln','f-fn','f-lk','f-fk','f-tel','f-zip','f-pref','f-a1','f-email'].every(id=>document.getElementById(id).value.trim()!=='');
+  const ok=['f-ln','f-fn','f-lk','f-fk','f-tel','f-zip','f-pref','f-a1','f-a2','f-email'].every(id=>document.getElementById(id).value.trim()!=='');
   document.getElementById('s3next').disabled=!ok;
 }
 
@@ -1111,7 +1111,7 @@ function resetOtherForm(){
   <div style="width:100%;max-width:390px;margin:0 auto;padding-bottom:64px">
     <div class="hdr">
       <div class="hdr-logo" style="margin-left:16px">
-        <svg height="30" viewBox="0 0 220 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg height="30" viewBox="0 0 270 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="22" cy="22" r="20" stroke="#1a1a1a" stroke-width="1.8" fill="none"/>
           <polygon points="22,6 10,36 22,32" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
           <polygon points="22,6 34,36 22,32" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
