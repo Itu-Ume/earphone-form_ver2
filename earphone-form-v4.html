@@ -36,7 +36,7 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
 .sbar-t{font-size:11px;font-weight:700;margin-bottom:3px}
 .sbar-n{font-size:10px;color:var(--sub);line-height:1.6;margin-bottom:7px}
 .srow{display:flex;gap:7px}
-.sinput{flex:1;border:1.5px solid var(--border);border-radius:8px;padding:8px 10px;font-size:13px;font-family:'Outfit',sans-serif;background:var(--bg);outline:none;color:var(--text)}
+.sinput{flex:1;border:1.5px solid var(--border);border-radius:8px;padding:8px 10px;font-size:16px;font-family:'Outfit',sans-serif;background:var(--bg);outline:none;color:var(--text)}
 .sinput:focus{border-color:var(--accent)}
 .sbtn{background:var(--accent);border:none;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:700;color:#fff;cursor:pointer;white-space:nowrap}
 .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:10px}
@@ -83,7 +83,7 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
 .fgroup{display:flex;flex-direction:column;gap:12px;margin-bottom:16px}
 .fwrap{display:flex;flex-direction:column;gap:5px}
 .flabel{font-size:11px;font-weight:700;display:flex;align-items:center;gap:5px}
-.finput{width:100%;border:1.5px solid var(--border);border-radius:9px;padding:11px 13px;font-size:14px;font-family:'Noto Sans JP',sans-serif;background:var(--surface);color:var(--text);outline:none;transition:border-color .2s}
+.finput{width:100%;border:1.5px solid var(--border);border-radius:9px;padding:11px 13px;font-size:16px;font-family:'Noto Sans JP',sans-serif;background:var(--surface);color:var(--text);outline:none;transition:border-color .2s}
 .finput:focus{border-color:var(--accent)}
 .finput::placeholder{color:#ccc}
 .frow{display:flex;gap:9px}
@@ -245,7 +245,7 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
 
   /* ヘッダー */
   .hdr{max-width:860px;margin:0 auto;border-radius:12px 12px 0 0;padding:16px 32px 14px} .hdr-logo{flex-shrink:0}
-  .hdr-logo svg{height:36px;width:auto;max-width:260px}
+  .hdr-logo svg{height:36px;width:auto}
   .hdr-title{font-size:15px}
 
   /* ステッパー */
@@ -279,8 +279,8 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text
   .ccard{border-radius:10px}
 
   /* STEP3：住所フォーム → 2カラムレイアウト */
-  .namerow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-  .kanarow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .namerow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .kanarow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .fwrap{margin-bottom:14px}
   .finput{font-size:14px;padding:10px 12px}
   .flabel{font-size:12px}
@@ -385,7 +385,7 @@ function autoAddr(){
 
 <div class="hdr">
   <div class="hdr-logo">
-    <svg height="30" viewBox="0 0 220 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="audio-technica">
+    <svg height="30" viewBox="0 0 270 44" style="width:auto" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="audio-technica">
       <!-- ロゴマーク：円 -->
       <circle cx="22" cy="22" r="20" stroke="#1a1a1a" stroke-width="1.8" fill="none"/>
       <!-- 左の三角形 -->
@@ -1111,7 +1111,7 @@ function resetOtherForm(){
   <div style="width:100%;max-width:390px;margin:0 auto;padding-bottom:64px">
     <div class="hdr">
       <div class="hdr-logo" style="margin-left:16px">
-        <svg height="30" viewBox="0 0 270 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg height="30" viewBox="0 0 270 44" style="width:auto" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="22" cy="22" r="20" stroke="#1a1a1a" stroke-width="1.8" fill="none"/>
           <polygon points="22,6 10,36 22,32" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
           <polygon points="22,6 34,36 22,32" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
